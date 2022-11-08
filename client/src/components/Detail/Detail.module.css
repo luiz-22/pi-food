@@ -1,0 +1,45 @@
+.detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.detail a {
+    color: #f4952f;
+}
+
+.tag {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    background: #f4952f;
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 0 2rem 0.5rem 0;
+    text-decoration: none;
+}
+
+.tag:before {
+    background: #fff;
+    width: 10px;
+    height: 10px;
+    content: "";
+    display: inline-block;
+    border-radius: 20px;
+    margin: 0 5px 0 0;
+}
+
+
+@media (max-width: 750px) {
+    .detail {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .detail .right {
+        order: -1;
+    }
+}

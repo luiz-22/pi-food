@@ -1,0 +1,89 @@
+.bg {
+    background-color: #000;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1rem;
+}
+
+.navBar button,
+.navBar input[type="submit"] {
+    padding: 0.3rem 0.5rem;
+    background-color: #000;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    border: 1px solid #f4952f;
+    color: #f4952f;
+    cursor: pointer;
+}
+
+.navBar input[type="text"] {
+    padding: 0.3rem 0.5rem;
+    background-color: #000;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    border: 1px solid #f4952f;
+    color: #f4952f;
+    outline: none;
+    margin-right: 0.5rem;
+}
+
+.navBar select {
+    color: #f4952f;
+    background-color: #000;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    border: 1px solid #f4952f;
+    outline: none;
+    cursor: pointer;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.rightTop {
+    margin-bottom: 0.5rem;
+}
+
+.showAll,
+.sort {
+    margin-right: 0.5rem;
+}
+
+
+@media (max-width: 1200px) {
+    .navBar {
+        padding: 0 1rem 1rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .navBar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right {
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .select {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sort {
+        margin-bottom: 0.5rem;
+    }
+}

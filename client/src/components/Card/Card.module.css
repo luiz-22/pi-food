@@ -1,0 +1,34 @@
+.card {
+    width: 312px;
+    box-shadow: 0 0 20px #e4e4e4;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Jost', sans-serif;
+}
+
+.text {
+    flex: 1;
+    padding: 0 1rem 1rem;
+}
+
+.title {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #d8d8d8;
+    text-align: left;
+}
+
+.title h2 {
+    font-size: 22px;
+}
+
+.time {
+    padding: 0.5rem 0;
+    text-align: left;
+}
+
+.diets {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}

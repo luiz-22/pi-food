@@ -1,0 +1,76 @@
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.check {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.form input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #f4952f;
+}
+
+.form textarea {
+    width: 100%;
+    max-width: 400px;
+    resize: none;
+    border: 1px solid #f4952f;
+}
+
+.form input[type="number"] {
+    border: 1px solid #f4952f;
+    max-width: 70px;
+}
+
+.form button {
+    padding: 0.5rem 2rem;
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 0 1rem;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    outline: none;
+}
+
+.checkDiets,
+.checkDishes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.error {
+    width: 100%;
+    max-width: 400px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.error span {
+    color: #f4952f;
+}
+
+@media (max-width: 1050px) {
+    .container {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .form {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}

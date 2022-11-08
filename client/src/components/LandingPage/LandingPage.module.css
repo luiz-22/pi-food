@@ -1,0 +1,51 @@
+.imageLanding,
+.bgOpacity {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.bgOpacity {
+    background-color: #00000095;
+}
+
+.viewportHeader {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.viewportHeader h1 {
+    font-family: 'Kalam', cursive;
+    color: #f4952f;
+    font-weight: 300;
+    font-size: 54px;
+}
+
+.buttonLanding {
+    font-family: 'Kalam', cursive;
+    color: #f4952f;
+    border: 1px solid #f4952f;
+    padding: 1rem 2rem;
+    margin: 2rem;
+    font-weight: 500;
+}
+
+.buttonLanding:hover {
+    cursor: pointer;
+    border: 1px solid #000;
+    color: #fff;
+    background-color: #f4952f;
+    border-color: #f4952f;
+}
+
+.buttonLanding:visited {
+    color: #000;
+}
