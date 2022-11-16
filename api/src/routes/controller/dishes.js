@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const { Dish } = require('../db')
+const { Dish } = require('../../db')
 
 // ---------------------------------------------------- GET -----------------------------------------------------
 router.get('/', async (req, res) => {
