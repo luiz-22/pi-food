@@ -1,9 +1,7 @@
-const express = require('express')
-const router = express.Router()
 const { Dish } = require('../../db')
 
 // ---------------------------------------------------- GET -----------------------------------------------------
-router.get('/', async (req, res) => {
+let getDishes = async (req, res) => {
     try {
         let dishTypes = await Dish.findAll();
         res.status(200).json(dishTypes);
@@ -11,6 +9,8 @@ router.get('/', async (req, res) => {
         console.error('dishes.js', error)
         return ([])
     }
-})
+}
 
-module.exports = router
+module.exports = {
+    getDishes
+}
