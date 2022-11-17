@@ -19,6 +19,15 @@ a:visited {
     margin-right: auto;
 }
 
+.fix {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+
 @media (max-width: 1200px) {
     .container {
         padding: 0 1rem

@@ -9,6 +9,7 @@ import Title from './components/Title/Title'
 import NavBar from './components/NavBar/NavBar'
 import Detail from './components/Detail/Detail';
 import Form from './components/Form/Form';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -25,9 +26,16 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="home" element={
           <>
-            <Title />
-            <NavBar />
-            <Home />
+            <div className="fix">
+              <div>
+                <Title />
+                <NavBar />
+                <Home />
+              </div>
+              <section>
+                <Footer />
+              </section>
+            </div>
           </>
         } />
         <Route path='detail/:id' element={
