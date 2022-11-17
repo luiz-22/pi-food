@@ -40,14 +40,28 @@ function App() {
         } />
         <Route path='detail/:id' element={
           <>
-            <Title />
-            <Detail />
+            <div className="fix">
+              <div>
+                <Title />
+                <Detail />
+              </div>
+              <section>
+                <Footer />
+              </section>
+            </div>
           </>
         } />
         <Route path='createRecipe' element={
           <>
-            <Title />
-            <Form />
+            <div className="fix">
+              <div>
+                <Title />
+                <Form />
+              </div>
+              <section>
+                <Footer />
+              </section>
+            </div>
           </>
         } />
         <Route path='*' element={
@@ -57,7 +71,7 @@ function App() {
           </>
         } />
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter >
   );
 }
 

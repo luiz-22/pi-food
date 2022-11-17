@@ -6,8 +6,16 @@ export default function Footer() {
   return (
     <div className={styles.footer}>
       <section className="container">
-        <img className={styles.brand} src={linkedin} alt="linkedin" />
-        <img className={styles.brand} src={github} alt="github" />
+        <a
+          href="https://www.linkedin.com/in/luiz22/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img className={styles.brand} src={linkedin} alt="linkedin" />
+        </a>
+        <a href="https://github.com/luiz-22" target="_blank" rel="noreferrer">
+          <img className={styles.brand} src={github} alt="github" />
+        </a>
       </section>
     </div>
   );
