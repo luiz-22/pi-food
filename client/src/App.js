@@ -6,10 +6,12 @@ import { getRecipes, getDiets, getDishes } from "./redux/actions";
 import LandingPage from './components/LandingPage/LandingPage';
 import Home from './components/Home/Home';
 import Title from './components/Title/Title'
+import Title2 from './components/Title/Title2'
 import NavBar from './components/NavBar/NavBar'
 import Detail from './components/Detail/Detail';
 import Form from './components/Form/Form';
 import Footer from './components/Footer/Footer';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
 
@@ -42,7 +44,7 @@ function App() {
           <>
             <div className="fix">
               <div>
-                <Title />
+                <Title2 />
                 <Detail />
               </div>
               <section>
@@ -55,7 +57,7 @@ function App() {
           <>
             <div className="fix">
               <div>
-                <Title />
+                <Title2 />
                 <Form />
               </div>
               <section>
@@ -66,8 +68,8 @@ function App() {
         } />
         <Route path='*' element={
           <>
-            <Title />
-            <h2>Page not found.</h2>
+            <Title2 />
+            <NotFound />
           </>
         } />
       </Routes>

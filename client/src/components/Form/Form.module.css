@@ -19,36 +19,61 @@
 .form input[type="text"] {
     width: 100%;
     max-width: 400px;
-    border: 1px solid #f4952f;
+    border: 1px solid #000;
+    outline: none;
+    font-family: 'Jost', sans-serif;
 }
 
 .form textarea {
     width: 100%;
     max-width: 400px;
     resize: none;
-    border: 1px solid #f4952f;
+    border: 1px solid #000;
+    outline: none;
 }
 
 .form input[type="number"] {
-    border: 1px solid #f4952f;
+    border: 1px solid #000;
     max-width: 70px;
+    outline: none;
+    font-family: 'Jost', sans-serif;
 }
 
 .form button {
-    padding: 0.5rem 2rem;
-    background-color: #fff;
-    border: 1px solid #000;
+    padding: 0.6rem 2rem;
+    background-color: #000;
+    color: #f4952f;
     margin: 0 1rem;
     cursor: pointer;
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     outline: none;
+    border: none;
+}
+
+.form button:hover {
+    background-color: #f4952f;
+    color: #fff;
+    border: none;
+    transition: all 0.5s ease-out;
 }
 
 .checkDiets,
 .checkDishes {
     display: flex;
     justify-content: space-between;
+}
+
+.form input[type="checkbox"] {
+    height: 1rem;
+    width: 1rem;
+    accent-color: #f4952f;
+}
+
+.form input[type="text"]:focus,
+.form textarea:focus,
+.form input[type="number"]:focus {
+    border: 1px solid #f4952f;
 }
 
 .error {

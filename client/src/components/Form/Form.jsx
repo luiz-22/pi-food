@@ -69,7 +69,7 @@ export default function Form() {
     }
   }
 
-  const handleChange = (e) => {   
+  const handleChange = (e) => {
     setForm((prevInput) => {
       const newInput = {
         ...prevInput,
@@ -84,7 +84,7 @@ export default function Form() {
     let newArray = form.diets;
     let find = newArray.indexOf(e.target.value);
 
-    if (find >= 0) {  
+    if (find >= 0) {
       newArray.splice(find, 1);
     } else {
       newArray.push(e.target.value);
@@ -204,6 +204,8 @@ export default function Form() {
           <article className={styles.check}>
             <p>
               <label>Diets</label>
+              <br />
+              <br />
               {diets.map((d) => {
                 return (
                   <div key={d.id} className={styles.checkDiets}>
@@ -221,6 +223,8 @@ export default function Form() {
             </p>
             <p>
               <label>Types of dishes</label>
+              <br />
+              <br />
               {dishes.map((d) => {
                 return (
                   <div key={d.id} className={styles.checkDishes}>
@@ -237,9 +241,11 @@ export default function Form() {
               })}
             </p>
           </article>
+          <br />
           <div>
             <button>CREATE RECIPE</button>
           </div>
+          <br />
         </section>
       </form>
     </div>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Loader from "../Loader/Loader";
 import { useSelector } from "react-redux";
 import Card from "../Card/Card";
 import styles from "./Home.module.css";
@@ -101,6 +102,7 @@ export default function Home() {
           </button>
         </div>
       ) : null}
+      {recipes.length === 0 && <Loader />}
     </>
   );
 }

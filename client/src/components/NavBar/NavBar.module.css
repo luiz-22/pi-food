@@ -1,6 +1,6 @@
 .bg {
     background-color: #000;
-    box-shadow: 0px 6px 11px -3px rgba(10,10,10,1);
+    box-shadow: 0px 6px 11px -3px rgba(10, 10, 10, 1);
 }
 
 .navBar {
@@ -22,6 +22,13 @@
     color: #f4952f;
     cursor: pointer;
 }
+
+.navBar button:hover,
+.navBar input[type="submit"]:hover {
+    opacity: 0.7;
+    transition: all 0.5s ease-out;
+}
+
 
 .navBar input[type="text"] {
     padding: 0.3rem 0.5rem;
