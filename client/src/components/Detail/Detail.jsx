@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import styles from "./Detail.module.css";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { recipeDetail, clearDetail} from "../../redux/actions";
+import { recipeDetail, clearDetail } from "../../redux/actions";
 import Loader from "../Loader/Loader";
 
 export default function Detail() {
@@ -64,6 +64,7 @@ export default function Detail() {
             </section>
           </article>
           {/*  */}
+          <br />
         </>
       ) : (
         <Loader />

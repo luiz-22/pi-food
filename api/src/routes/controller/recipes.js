@@ -20,7 +20,7 @@ const getApiInfo = async () => {
                     id: result.id,
                     title: result.title,
                     readyInMinutes: result.readyInMinutes,
-                    image: result.image,
+                    image: `https://webknox.com/recipeImages/${result.id}-556x370.jpg`,
                     summary: result.summary,
                     dishTypes: result.dishTypes?.map(element => element),
                     diets: result.diets?.map(element => element),
