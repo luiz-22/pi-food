@@ -15,7 +15,7 @@ const recipes = require('./controller/recipes.js');
 
 router.get('/diets', getDiets);
 router.get('/dishes', getDishes);
-router.use('/recipe', createRecipe);
+router.post('/recipe', createRecipe);
 router.use('/recipes', recipes);
 
 module.exports = router;

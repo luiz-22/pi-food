@@ -102,6 +102,9 @@ export default function Home() {
           </button>
         </div>
       ) : null}
+
+        <br />
+
       {recipes.length === 0 && <Loader />}
     </>
   );
