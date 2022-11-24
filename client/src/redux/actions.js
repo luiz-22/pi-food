@@ -16,7 +16,7 @@ import {
 
 export function getRecipes() {
     return async function (dispatch) {
-        return await axios.get(`http://localhost:3001/recipes`)
+        return await axios.get(`https://pi-food-production-c5e0.up.railway.app/recipes`)
             .then(response => {
                 dispatch({ type: GET_RECIPES, payload: response.data })
             })
@@ -34,7 +34,7 @@ export function getAllRecipes() {
 
 export function getDiets() {
     return async function (dispatch) {
-        return await axios.get(`http://localhost:3001/diets`)
+        return await axios.get(`https://pi-food-production-c5e0.up.railway.app/diets`)
             .then(response => {
                 dispatch({ type: GET_DIETS, payload: response.data })
             })
@@ -47,7 +47,7 @@ export function getDiets() {
 
 export function getDishes() {
     return async function (dispatch) {
-        return await axios.get(`http://localhost:3001/dishes`)
+        return await axios.get(`https://pi-food-production-c5e0.up.railway.app/dishes`)
             .then(response => {
                 dispatch({ type: GET_DISHES, payload: response.data })
             })
@@ -60,7 +60,7 @@ export function getDishes() {
 
 export function search(name) {
     return async function (dispatch) {
-        return await axios.get(`http://localhost:3001/recipes?name=${name}`)
+        return await axios.get(`https://pi-food-production-c5e0.up.railway.app/recipes?name=${name}`)
             .then(response => {
                 dispatch({ type: SEARCH, payload: response.data })
             })
@@ -97,7 +97,7 @@ export function filterByDish(name) {
 
 export function recipeDetail(id) {
     return async function (dispatch) {
-        return await axios.get(`http://localhost:3001/recipes/${id}`)
+        return await axios.get(`https://pi-food-production-c5e0.up.railway.app/recipes/${id}`)
             .then(response => {
                 dispatch({ type: RECIPE_DETAIL, payload: response.data })
             })
@@ -114,7 +114,7 @@ export function clearDetail() {
 export function createRecipe(recipe) {
     return async function (dispatch) {
         try {
-            return await axios.post(`http://localhost:3001/recipe`, recipe)
+            return await axios.post(`https://pi-food-production-c5e0.up.railway.app/recipe`, recipe)
                 .then(response => {
                     dispatch(getRecipes())
                     alert(response.data)

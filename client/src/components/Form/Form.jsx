@@ -208,7 +208,7 @@ export default function Form() {
               <br />
               {diets.map((d) => {
                 return (
-                  <div key={d.id} className={styles.checkDiets}>
+                  <span key={d.id} className={styles.checkDiets}>
                     <label htmlFor={d.name}>{d.name}</label>
                     <input
                       type="checkbox"
@@ -217,7 +217,7 @@ export default function Form() {
                       value={d.name}
                       onChange={handleCheck}
                     />
-                  </div>
+                  </span>
                 );
               })}
             </p>
@@ -227,7 +227,7 @@ export default function Form() {
               <br />
               {dishes.map((d) => {
                 return (
-                  <div key={d.id} className={styles.checkDishes}>
+                  <span key={d.id} className={styles.checkDishes}>
                     <label htmlFor={d.name}>{d.name}</label>
                     <input
                       type="checkbox"
@@ -236,7 +236,7 @@ export default function Form() {
                       value={d.name}
                       onChange={handleCheck2}
                     />
-                  </div>
+                  </span>
                 );
               })}
             </p>
