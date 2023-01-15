@@ -66,6 +66,9 @@
     margin-right: 0.5rem;
 }
 
+.create:hover {
+    opacity: 0.7 !important;
+}
 
 @media (max-width: 1200px) {
     .navBar {
