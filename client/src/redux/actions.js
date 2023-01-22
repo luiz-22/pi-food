@@ -14,7 +14,7 @@ import {
     CLEAR_DETAIL
 } from './types'
 
-const URL = 'https://pi-food-xso1.onrender.com/'
+const URL = 'https://pi-food-xso1.onrender.com'
 
 export function getRecipes() {
     return async function (dispatch) {
