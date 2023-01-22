@@ -15,66 +15,65 @@ import NotFound from './components/NotFound/NotFound';
 
 function App() {
 
-  // const dispatch = useDispatch();
-  // useEffect(() => {
-  //   dispatch(getRecipes());
-  //   dispatch(getDiets())
-  //   dispatch(getDishes())
-  // }, [dispatch]);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getRecipes());
+    dispatch(getDiets())
+    dispatch(getDishes())
+  }, [dispatch]);
 
   return (
-    <h1>Hello</h1>
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route path="/" element={<LandingPage />} />
-    //     <Route path="home" element={
-    //       <>
-    //         <div className="fix">
-    //           <div>
-    //             <Title />
-    //             <NavBar />
-    //             <Home />
-    //           </div>
-    //           <section>
-    //             <Footer />
-    //           </section>
-    //         </div>
-    //       </>
-    //     } />
-    //     <Route path='detail/:id' element={
-    //       <>
-    //         <div className="fix">
-    //           <div>
-    //             <Title2 />
-    //             <Detail />
-    //           </div>
-    //           <section>
-    //             <Footer />
-    //           </section>
-    //         </div>
-    //       </>
-    //     } />
-    //     <Route path='createRecipe' element={
-    //       <>
-    //         <div className="fix">
-    //           <div>
-    //             <Title2 />
-    //             <Form />
-    //           </div>
-    //           <section>
-    //             <Footer />
-    //           </section>
-    //         </div>
-    //       </>
-    //     } />
-    //     <Route path='*' element={
-    //       <>
-    //         <Title2 />
-    //         <NotFound />
-    //       </>
-    //     } />
-    //   </Routes>
-    // </BrowserRouter >
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="home" element={
+          <>
+            <div className="fix">
+              <div>
+                <Title />
+                <NavBar />
+                <Home />
+              </div>
+              <section>
+                <Footer />
+              </section>
+            </div>
+          </>
+        } />
+        <Route path='detail/:id' element={
+          <>
+            <div className="fix">
+              <div>
+                <Title2 />
+                <Detail />
+              </div>
+              <section>
+                <Footer />
+              </section>
+            </div>
+          </>
+        } />
+        <Route path='createRecipe' element={
+          <>
+            <div className="fix">
+              <div>
+                <Title2 />
+                <Form />
+              </div>
+              <section>
+                <Footer />
+              </section>
+            </div>
+          </>
+        } />
+        <Route path='*' element={
+          <>
+            <Title2 />
+            <NotFound />
+          </>
+        } />
+      </Routes>
+    </BrowserRouter >
   );
 }
 
