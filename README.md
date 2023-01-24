@@ -2,7 +2,7 @@
   Recipe Inn
 </h1>
 
-Aplicación web creada con React, que permite buscar recetas. La aplicación consume una API creada con NodeJS, utilizando Express, que consume la API de Spoonacular y recetas propias creadas, guardadas en una base de datos Postgres. [Recipe Inn](https://recipe-inn.vercel.app/){:target="_blank" rel="noopener"}
+Aplicación web creada con React, que permite buscar recetas. La aplicación consume una API creada con NodeJS, utilizando Express, que consume la API de Spoonacular y recetas propias creadas, guardadas en una base de datos Postgres. [Recipe Inn](https://recipe-inn.vercel.app/)
 
 <p align="center">
 <img src="1.png" width="49%">
