@@ -14,9 +14,7 @@ Aplicación web creada con React, que permite buscar recetas. La aplicación con
 ## Como usar
 
 - Clonar el repositorio: `git clone https://github.com/luiz-22/pi-food.git`
-- En la carpeta api: `npm i`
-- En la carpeta client: `npm i`
-- Base de datos Postgres: instalar Postgres y guardar la variables de entorno en un archivo .env
+- En la ruta de la carpeta client: `npm start`
 
 ## Tecnologías usadas
 
